@@ -169,17 +169,25 @@ function App() {
           />
         ))}
       </div>
-      <button onClick={handlePrevClick}>←</button>
-      <button onClick={handleNextClick}>→</button>
-      <button onClick={handleGenerateMeme}>Generate Meme</button>
-      <button onClick={handleMemePicker}>Choose your meme</button>
-      <button onClick={handleRandomMeme}>Random Meme</button>
+      <div className="arrows-container">
+        <button onClick={handlePrevClick}>←</button>
+        <button onClick={handleNextClick}>→</button>
+      </div>
+      <div className="buttons-container">
+          <button onClick={handleGenerateMeme}>Generate Meme</button>
+          <button onClick={handleMemePicker}>Choose your meme</button>
+          <button onClick={handleRandomMeme}>Random Meme</button>
+      </div>
       {selectedMeme && (
         <div className="selected-meme">
           <img src={selectedMeme.url} alt={selectedMeme.name} />
         </div>
       )}
-      {generatedMemeUrl && <img src={generatedMemeUrl} alt="Generated Meme" />}
+      {generatedMemeUrl ? (
+        <img src={generatedMemeUrl} alt="Generated Meme" />
+      ) : (
+        <p>Your meme will be generated here...</p>
+      )}
     </div>
   );
   

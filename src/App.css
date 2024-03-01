@@ -18,12 +18,19 @@
   margin-bottom: 20px;
 }
 
+/* Selected meme image container */
+.selected-meme {
+  max-width: 500px; /* Set a fixed width for the container */
+  width: 100%; /* Ensure that the container resizes appropriately */
+  margin-bottom: 20px; /* Add space below the image */
+}
+
 /* Selected meme image */
 .selected-meme img {
-  max-width: 100%; /* Ensure the image resizes appropriately */
-  height: auto;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  width: 100%; /* Ensure the image fills the container width */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Rounded corners for aesthetics */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
 /* Buttons */
@@ -50,4 +57,14 @@ button:disabled {
 
 button:last-child {
   margin-right: 0; /* Remove right margin for the last button in a row */
+}
+
+/* Buttons container */
+.buttons-container {
+  flex-direction: column;
+  margin-left: 20px; /* Adjust the margin to create space between meme and buttons */
+}
+
+.buttons-container button {
+  margin-bottom: 10px; /* Add space between buttons */
 }
