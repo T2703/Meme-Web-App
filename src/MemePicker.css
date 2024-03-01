@@ -1,0 +1,16 @@
+.memes-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:  flex-start;
+}
+
+.meme-item {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.meme-item img {
+  max-width: 200px;
+  height: auto;
+}
