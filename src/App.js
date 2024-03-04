@@ -96,6 +96,7 @@ function App() {
       if (data.success) {
         console.log('Success:', data.data.url);
         setGeneratedMemeUrl(data.data.url);
+        alert("Your meme has been generated scroll down to check.");
       } 
       else {
         console.error('Failed:', data.error_message);
@@ -169,14 +170,14 @@ function App() {
           />
         ))}
       </div>
-      <div className="arrows-container">
-        <button onClick={handlePrevClick}>←</button>
-        <button onClick={handleNextClick}>→</button>
-      </div>
       <div className="buttons-container">
           <button onClick={handleGenerateMeme}>Generate Meme</button>
           <button onClick={handleMemePicker}>Choose your meme</button>
           <button onClick={handleRandomMeme}>Random Meme</button>
+      </div>
+      <div className="arrows-container">
+        <button onClick={handlePrevClick}>←</button>
+        <button onClick={handleNextClick}>→</button>
       </div>
       {selectedMeme && (
         <div className="selected-meme">
