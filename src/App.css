@@ -4,67 +4,63 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Ensure that the container covers the full viewport height */
+  min-height: 100vh; 
   padding: 20px;
-  background-color: #f5f5f5; /* Light background color */
-  font-family: Arial, sans-serif; /* Choose a modern font */
+  background-color: #f5f5f5; 
+  font-family: Arial, sans-serif; 
 }
 
-/* Text overlay container */
 .text-overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  width: 100%;
 }
 
-/* Selected meme image container */
 .selected-meme {
-  max-width: 500px; /* Set a fixed width for the container */
-  width: 100%; /* Ensure that the container resizes appropriately */
-  margin-bottom: 20px; /* Add space below the image */
+  max-width: 500px; 
+  width: 100%; 
+  margin-bottom: 20px; 
 }
 
-/* Selected meme image */
 .selected-meme img {
-  width: 100%; /* Ensure the image fills the container width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners for aesthetics */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-/* Buttons */
 button {
-  padding: 10px 20px; /* Increase padding for better touch responsiveness */
-  margin: 5px; /* Add spacing between buttons */
-  font-size: 16px; /* Increase font size for better readability */
-  cursor: pointer; /* Show pointer cursor on hover */
-  border: none; /* Remove default button border */
-  background-color: #007bff; /* Blue button background color */
-  color: #ffffff; /* White text color */
-  border-radius: 5px; /* Rounded corners for aesthetics */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  padding: 10px 20px; 
+  margin: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border: none; 
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 button:disabled {
-  opacity: 0.5; /* Reduce opacity for disabled buttons */
-  cursor: not-allowed; /* Show not-allowed cursor for disabled buttons */
+  opacity: 0.5; 
+  cursor: not-allowed; 
 }
 
 button:last-child {
-  margin-right: 0; /* Remove right margin for the last button in a row */
+  margin-right: 0;
 }
 
-/* Buttons container */
 .buttons-container {
   flex-direction: column;
-  margin-left: 20px; /* Adjust the margin to create space between meme and buttons */
+  margin-left: 20px; 
 }
 
 .buttons-container button {
-  margin-bottom: 10px; /* Add space between buttons */
+  margin-bottom: 10px;
 }
