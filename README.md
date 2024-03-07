@@ -1,1 +1,1 @@
-Yeah the readme shall be done when I finish up the ui 
+Well it's done but the readme is a later me issue lol.
